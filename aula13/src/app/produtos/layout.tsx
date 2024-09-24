@@ -1,5 +1,3 @@
-import Cabecalho from "@/components/Cabecalho/Cabecalho";
-import Rodape from "@/components/Rodape/Rodape";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,9 +8,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
       <div>
-        <Cabecalho />
+        <p>OPA</p>
         {children}
-        <Rodape />
       </div>
   );
 }
