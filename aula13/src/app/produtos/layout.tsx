@@ -1,5 +1,5 @@
-import Cabecalho from "@/components/Cabecalho/Cabecalho";
-import Rodape from "@/components/Rodape/Rodape";
+// import Cabecalho from "@/components/Cabecalho/Cabecalho";
+// import Rodape from "@/components/Rodape/Rodape";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="pt-br">
-      <body>
-        <Cabecalho />
+   
+      <div>
+        <p>MAIS PRODUTOS</p>
         {children}
-        <Rodape />
-      </body>
-    </html>
+        <p>MAIS BISCOITOS</p>
+      </div>
+      
   );
 }
