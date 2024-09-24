@@ -1,17 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = {
+const nextConfig = {
+   
     images:{
         remotePatterns: [
             {
-                protocol:'https',
-                hostname:'/*dominio*/',
-                pathname:'/**',
+                protocol: 'https',
+                hostname: 'lojaintegrada.com.br',
+                pathname: '/**',
                 port:'',
             }
         ],
     }
 };
-
-export default nextConfig;
+ 
+export default nextConfig
