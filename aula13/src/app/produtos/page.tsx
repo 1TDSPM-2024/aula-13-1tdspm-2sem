@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Produtos() {
 
@@ -29,7 +30,7 @@ export default function Produtos() {
                                 <td>{p.id}</td>
                                 <td>{p.nome}</td>
                                 <td>{p.qtd}</td>
-                                <td>  </td>
+                                <td> <Link href={`/produtos/produto/${p.id}`}>Editar</Link> </td>
                             </tr>
                         ))}
                     </tbody>

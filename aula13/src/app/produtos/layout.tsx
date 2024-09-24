@@ -10,6 +10,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       <div>
         <p>OPA</p>
         {children}
+        <p>Mais Produtos</p>
       </div>
   );
 }
