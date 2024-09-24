@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Produtos() {
 
@@ -20,6 +21,7 @@ export default function Produtos() {
                             <th>ID</th>
                             <th>NOME</th>
                             <th>QTD</th>
+                            <th>EDITAR</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,12 +30,13 @@ export default function Produtos() {
                                 <td>{p.id}</td>
                                 <td>{p.nome}</td>
                                 <td>{p.qtd}</td>
+                                <td> <Link href={`/produtos/produto/${p.id}`}>Editar</Link> </td>
                             </tr>
                         ))}
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colSpan={3}>
+                            <td colSpan={4}>
                                 Quantidade de registros:{lista.length}
                             </td>
                         </tr>
